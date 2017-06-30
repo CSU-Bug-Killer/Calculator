@@ -18,17 +18,14 @@ public:
 private:
     Ui::Caculator *ui;
 
-//    QStack<QString> stack;
-
-    bool isOpClicked=false; //操作符不能连续按下，‘false’表示未被按下，‘true’表示已被按下
-    bool isEqlClicked=false;
+    bool isOpClicked=false;          //用于判断运算符点击是否有效，‘false’表示未被按下，‘true’表示已被按下
+    bool isEqlClicked=false;         //用于判断是否开始新的运算
     QString express="";
 
 private slots:
     void numClickedSlot(void);       //数字
     void opClickedSlot(void);        //操作符 +-*/
     void eqlClickedSlot(void);       // =
-    void minusClickedSlot(void);     //负号被按下
     void pointClickedSlot(void);     //点
     void clearClickedSlot(void);     //清屏，清楚结果文本框
     void clearAllClickedSlot(void);  //清屏，清除所有文本框

@@ -18,3 +18,9 @@ SOURCES += main.cpp\
 HEADERS  += caculator.h
 
 FORMS    += caculator.ui
+
+DISTFILES += \
+    caculator.qss
+
+RESOURCES += \
+    qss.qrc
